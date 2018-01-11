@@ -1,0 +1,47 @@
+// Colors
+$bg: black;
+$btn: white;
+
+body {
+   background-color: $bg;
+   font-size: 1rem;
+}
+#container {
+}
+.tic-tac-toe {
+   margin: 100px auto;
+   padding: 30px;
+   width: 190px;
+   display: grid;
+   grid-template-rows: repeat(5, 60px);
+   grid-template-columns: repeat(3, 60px);
+   grid-gap: 10px;
+   grid-auto-flow: row;
+   font-size: 1rem;
+   background-color: rgb(32,64,192);
+   border-radius: 20px;
+}
+.ttt__title {
+   margin: 0 auto;
+   grid-row: 1 / 2;
+   grid-column: 1 / 4;
+   color: $btn;
+}
+.ttt__btn {
+   height: 50px;
+   width: 50px;
+   font-size: 2em;
+   background-color: $btn;
+   border: none;
+   border-radius: 10%;
+}
+.ttt__switch {
+   grid-row: 5 / 6;
+   grid-column: 1 / 4;
+   margin: 5px auto;
+   height: 40px;
+   width: 150px;
+   background-color: $btn;
+   border: none;
+   border-radius: 5px;
+}
